@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewroot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="helloworld.demo.com.draganddrop.MainActivity"
+    android:background="@drawable/hut">
+
+
+    <ImageView
+        android:id="@+id/imgid1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/imgid2"
+        android:layout_toLeftOf="@+id/imgid3"
+        android:layout_toStartOf="@+id/imgid3"
+        android:background="@drawable/fire" />
+
+    <ImageView
+        android:id="@+id/imgid2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imgid3"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/pot" />
+
+    <ImageView
+        android:id="@+id/imgid3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="149dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:layout_toLeftOf="@+id/imgid2"
+        android:layout_toStartOf="@+id/imgid2"
+        android:background="@drawable/sugarcane" />
+</RelativeLayout>
